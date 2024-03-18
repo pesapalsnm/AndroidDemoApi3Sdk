@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PesapalAPI3Demo</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="save">Save</string>
+    <string name="amount">Amount</string>
+</resources>
