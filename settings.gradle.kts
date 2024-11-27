@@ -1,5 +1,10 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -7,8 +12,6 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
-        mavenCentral()
-        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
@@ -16,7 +19,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter()
         maven { url = uri("https://jitpack.io") }
 
         maven {
@@ -24,8 +26,8 @@ dependencyResolutionManagement {
             url = uri("https://maven.pkg.github.com/pesapalsnm/androidPaymentSDK")
             credentials {
 
-                username = "" // Artifactory username
-                password = ""
+                username = "TO_BE_PROVIDED_BY_SUPPORT"
+                password = "TO_BE_PROVIDED_BY_SUPPORT"
 
             }
         }

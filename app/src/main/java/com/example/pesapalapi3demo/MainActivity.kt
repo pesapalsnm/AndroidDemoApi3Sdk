@@ -164,7 +164,7 @@ class MainActivity : AppCompatActivity(),DemoCartAdapter.clickedListener {
             state, middleName,postalCode, firstName, zipCode)
 
         val myIntent = Intent(this, PesapalSdkActivity::class.java)
-        myIntent.putExtra(PESAPALAPI3SDK.AMOUNT     , total.toString())
+        myIntent.putExtra(PESAPALAPI3SDK.AMOUNT     , total)
         myIntent.putExtra(PESAPALAPI3SDK.ORDER_ID   ,orderId)
         myIntent.putExtra(PESAPALAPI3SDK.CURRENCY   ,currency)
         myIntent.putExtra(PESAPALAPI3SDK.COUNTRY    ,translateCountryToEnum())

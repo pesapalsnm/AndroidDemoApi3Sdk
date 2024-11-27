@@ -12,8 +12,8 @@ android {
         applicationId = "com.example.pesapalapi3demo"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "2.0"
+        versionCode = 2
+        versionName = "2.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
