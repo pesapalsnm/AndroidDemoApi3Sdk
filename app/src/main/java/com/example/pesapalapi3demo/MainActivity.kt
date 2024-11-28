@@ -126,12 +126,11 @@ class MainActivity : AppCompatActivity(),DemoCartAdapter.clickedListener {
     }
 
     private fun initPayment(){
-        val consumerKey = ""
-        val consumerSecret = ""
-        val account = ""
-
-        val callBack = ""
-        val ipn = ""
+        val consumerKey    = ""                // Mandatory data personal to each merchant
+        val consumerSecret = ""                // Mandatory data personal to each merchant
+        val account        = ""                // Mandatory data personal to each merchant
+        val callBack       = ""                // Mandatory data personal to each merchant
+        val ipn            = ""                // Mandatory data personal to each merchant
 
 
         PESAPALAPI3SDK.init(this,
@@ -164,7 +163,7 @@ class MainActivity : AppCompatActivity(),DemoCartAdapter.clickedListener {
             state, middleName,postalCode, firstName, zipCode)
 
         val myIntent = Intent(this, PesapalSdkActivity::class.java)
-        myIntent.putExtra(PESAPALAPI3SDK.AMOUNT     , total)
+        myIntent.putExtra(PESAPALAPI3SDK.AMOUNT     , total.toDouble())
         myIntent.putExtra(PESAPALAPI3SDK.ORDER_ID   ,orderId)
         myIntent.putExtra(PESAPALAPI3SDK.CURRENCY   ,currency)
         myIntent.putExtra(PESAPALAPI3SDK.COUNTRY    ,translateCountryToEnum())
